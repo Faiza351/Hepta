@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+    <script src="https://kit.fontawesome.com/b6fd6bd7f6.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+
+        <a href="index.html" class="logo">
+            <h1>Hepta</h1>
+        </a>
+        <div class="header-right">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" style="color: black;" onclick="closeNav()">&times;</a>
+                <a href="index.html" style="color: lightseagreen;"><b>Home</b></a>
+                <a href="hotel.html"><b>Hotels</b></a>
+                <a href="aboutus.html" class="aboutus"><b>About Us</b></a>
+                <a href="gallery.html"><b>Gallery</b></a>
+                <a href="news.html" class="News"><b>News</b></a>
+                <a href="contact.html"><b>Contact</b></a>
+            </div>
+
+            <div id="main">
+                <span style="font-size:40px;cursor:pointer;color: white;" onclick="openNav()">&#9776; </span>
+            </div>
+        </div>
+        <div class="center" data-aos="fade-up" data-aos-duration="1000">
+            <h1 style="color: white; font-size: 78px;margin-top: -60px;letter-spacing: -2px;">Contact</h1>
+            <p class="txt">A free template by <mark class="mark"> <u> Colorlib </u></mark>. Download and share!</p>
+        </div>
+
+    </div>
+    <br><br><br><br><br>
+    <div class="row">
+        <div class="column1">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="rowff">
+                        <div class="columnff" style="background-color:white;">
+                            <label for="fname">Name</label><br>
+                            <input type="text" id="fname" name="firstname">
+                        </div>
+                        <div class="columnff" style="background-color:white;">
+                            <label for="number">Phone</label><br>
+                            <input type="number" id="number" name="number">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="subject">
+                        <label for="subject">Write Message</label><br>
+                        <textarea id="subject" name="subject"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="column2">
+            <h2 style="color: lightseagreen;margin-top: 70px;">ADDRESS:</h2>
+            <p style="font-size: 28px; width:400px;margin-top: -10px;"><b>98 West 21th Street, Suite 721 New York NY 10016</b></p>
+            <h2 style="color: lightseagreen;margin-top: 20px;">Phone:</h2>
+            <p style="font-size: 28px;margin-top: -10px;"><b>(+1) 435 3533</b></p>
+            <h2 style="color: lightseagreen;margin-top: 20px;">Email:</h2>
+            <p style="font-size: 28px;margin-top: -9px;"><b>info@yourdomain.com</b></p>
+        </div>
+    </div>
+    <!--card-->
+    <div class="afterdbg">
+        <br><br><br>
+        <h1 class="hc" data-aos="fade-up">Happy Customers</h1>
+        <div class="responsive2">
+            <div class="gallery2" data-aos="fade-up">
+                <img src="images/person_1.jpg" alt="person_1">
+                <div class="desc2">
+                    <p class="rbptxt3">“Far far away, behind the word mountains,
+                        far from the countries Vokalia and Consonantia, there live the blind texts.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.”</p>
+                    <p class="rbptxt4">— Clare Gupta</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive2">
+            <div class="gallery2" data-aos="fade-up">
+                <img src="images/person_2.jpg" alt="person_2">
+                <div class="desc2">
+                    <p class="rbptxt3">“Far far away, behind the word mountains,
+                        far from the countries Vokalia and Consonantia, there live the blind texts.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.”</p>
+                    <p class="rbptxt4">— Rogie Slater</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive2">
+            <div class="gallery2" data-aos="fade-up">
+                <img src="images/person_3.jpg" alt="person_3">
+                <div class="desc2">
+                    <p class="rbptxt3">“Far far away, behind the word mountains,
+                        far from the countries Vokalia and Consonantia, there live the blind texts.
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.”</p>
+                    <p class="rbptxt4">— John Doe</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="rowf">
+            <div class="columnf1" style="background-color:transparent;">
+                <h2 class="ql">Quick Link</h2>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">About Us</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Terms & Conditions</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Privacy Policy</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Help</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Rooms</p>
+                </a>
+            </div>
+            <div class="columnf1" style="background-color:transparent;">
+                <h2 class="ql">Support</h2>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Our Location</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">The Hosts</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">About</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Contact</p>
+                </a>
+                <a href="index.html" style="text-decoration: none;">
+                    <p class="qlt">Restaurant</p>
+                </a>
+            </div>
+            <div class="columnf2" style="background-color:transparent">
+                <h2 class="ql">Contact Info</h2>
+                <p class="qlt1">Address:</p>
+                <p class="qlt2">98 West 21th Street, Suite 721 New York NY 10016</p>
+                <p class="qlt1">Phone:</p>
+                <p class="qlt2">(+1) 435 3533</p>
+                <p class="qlt1">Email:</p>
+                <p class="qlt2">info@yourdomain.com</p>
+            </div>
+            <div class="columnf2" style="background-color:transparent;">
+                <h2 class="ql">Subscribe</h2>
+                <p class="qlt2" style="font-size: 20px;">Sign up for our newsletter</p>
+                <br>
+                    <input type="email" id="email1" name="email" placeholder="Your email...">
+                    <a href="index.html" style="text-decoration: none;"><i class="fa-solid fa-arrow-pointer"></i></a>
+            </div>
+        </div>
+        
+        <hr class="hrl">
+        <br><br><br>
+        <p class="fcpr">Copyright © 2024 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i>  by <a href="index.html" class="fcl">Colorlib</a></p>
+        <br>
+        <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,766 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/*header*/
+
+.header {
+  overflow: hidden;
+  padding: 20px 10px;
+  height: 110vh;
+  background-image: url('images/hero_1.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration:none; 
+  margin-top: -5px;
+  
+}
+
+.header a.logo {
+  font-size: 16px;
+ font-stretch: expanded;
+  letter-spacing: -1px;
+  margin-top: -5px;
+  
+}
+
+
+/*.header a:hover {
+  background-color: #ddd;
+  color: black;
+}*/
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+/*header right menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 20px 150px 8px 600px;
+  text-decoration: none;
+  font-size: 38px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-top: 10px;
+  line-height: 1;
+}
+.aboutus{
+  margin-left: -10px;
+}
+.News{
+  margin-left: 10px;
+}
+
+.sidenav a:hover {
+  color: lightseagreen;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  margin-top: -45px;
+  font-size: 66px;
+  margin-left: 590px;
+  margin-right: -10px;
+  padding-left: 700px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.center{
+  text-align: center;
+  margin-top: 190px;
+}
+
+.btn{
+  padding: 20px 20px;
+  width: 200px;
+  height: 10vh;
+  color: white;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: white;
+  font-size: 16px;
+}
+.btn:hover{
+  color: black;
+  background-color: white;
+}
+
+
+.txt{
+  font-size: 32px;
+  color: white;
+}
+
+.mark{
+  color:lightgray;
+  background-color: transparent;
+}
+.mark:hover{
+  color: white;
+}
+
+/*after header*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 1px;
+  height: 100vh; /* Should be removed. Only for demonstration */
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.img_1{
+  margin-left: 120px;
+  width: 539px;
+  height: 99.5vh;
+}
+.text{
+  margin-top: 150px;
+  margin-left: 52px;
+  font-size: 36px;
+}
+.text1{
+  margin-left: 52px;
+  font-size: 20px;
+  width: 520px;
+  line-height: 1.5;
+  color: grey;
+}
+.text2{
+  margin-left: 52px;
+  font-size: 20px;
+  width: 520px;
+  line-height: 1.5;
+  color: grey;
+}
+.fa-circle-play{
+  font-size: 50px;
+  margin-left: 52px;
+  color: lightseagreen;
+}
+.fa-circle-play:hover{
+  color: black;
+}
+.text3{
+  margin-left: 129px;
+  font-size: 20px;
+  color: lightseagreen;
+  margin-top: -36px;
+}
+
+/*card*/
+.card{
+  background-color: whitesmoke;
+  width:100%;
+  height: 167vh;
+  border-top: 1px solid lightgray;
+}
+
+.ctxt{
+  margin-top: 110px;
+  text-align: center;
+  font-size: 2.5vw;
+}
+.ctxt1{
+  margin-top: -14px;
+  margin-left: 300px;
+  font-size: 1.6vw;
+  margin-right: 230px;
+  text-align: center;
+  line-height: 1.7;
+  color:grey;
+}
+
+div.gallery {
+  height: 40vh;
+  width: 380px;
+}
+
+
+
+div.gallery img {
+  width: 30%;
+  height: auto;
+  margin-left: 134px;
+}
+
+div.desc {
+  text-align: center;
+  font-size: 1.5vw;
+  color: grey;
+  margin-left: -16px;
+  margin-top: -10px;
+
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+/*diagonal bg*/
+.dbg{
+  width: 1356.5px;
+  height: 370vh;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(-315deg,lightseagreen 50%,lightseagreen);
+  margin-left: -8px;
+
+}
+.dbg::before{
+  content: "";
+  display: block;
+  border-bottom: 10vw solid transparent;
+  border-left: 99.4vw solid white;
+  height: 150vh;
+}
+
+.itm{
+  margin-top: -992px;
+  font-size: 75px;
+  text-align: center;
+  font-weight: 900;
+  margin-left: 250px;
+  margin-right: 200px;
+  letter-spacing: -2px;
+}
+.itmt{
+  margin-top: -29px;
+  margin-left: 300px;
+  font-size: 1.6vw;
+  margin-right: 230px;
+  text-align: center;
+  line-height: 1.7;
+  color:grey;
+}
+
+/*slider*/
+.mySlides {display: none}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1020px;
+  position: relative;
+  margin: auto;
+  height: 130vh;
+  margin-left: 190px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:black;
+  font-weight: bold;
+  font-size: 42px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: gray;
+}
+
+.sliderimg{
+  width: 1020px;
+  height: 130vh;
+}
+
+/* Caption text 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+ 
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.rbp{
+  font-size: 66px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.rbpt{
+  margin-left: 300px;
+  font-size: 1.6vw;
+  margin-right: 230px;
+  text-align: center;
+  line-height: 1.7;
+  color:white;
+  margin-top: -23px;
+}
+
+/*3 images*/
+div.gallery1 {
+  border: 1px solid #ccc;
+  height: 85vh;
+  background-color: white;
+}
+
+div.gallery1 img {
+  width: 100%;
+  height: 38vh;
+}
+
+div.desc1 {
+  padding: 15px;
+  text-align: left;
+  margin-left: 8px;
+}
+
+.responsive1 {
+  float: left;
+  width: 25%;
+  margin-top: -7px;
+  margin-left: 150px;
+  margin-right: -120px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive1 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive1 {
+    width: 100%;
+  }
+}
+
+.rbptxt{
+  color: gray;
+  font-size: 21px;
+}
+
+.rbptxt1{
+  margin-top: -5px;
+  color: black;
+  font-size: 29px;
+  letter-spacing: -1px;
+  margin-right: 20px;
+}
+.rbptxt1:hover{
+  color: lightseagreen;
+  cursor: pointer;
+}
+
+.rbptxt2{
+  color: gray;
+  font-size: 20px;
+}
+
+/*after dbg */
+.hc{
+  font-size: 66px;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+div.gallery2 {
+  border: 1px solid transparent;
+  height: 60vh;
+  background-color: transparent;
+}
+
+div.gallery2 img {
+  width: 90px;
+  height: 14vh;
+  border-radius: 50%;
+  margin-left: 7px;
+}
+
+div.desc2 {
+  padding: 15px;
+  text-align: left;
+  margin-left: -6px;
+  font-style: italic;
+  margin-top: -8px;
+}
+
+.responsive2 {
+  float: left;
+  width: 27%;
+  margin-top: 10px;
+  margin-left: 150px;
+  margin-right: -140px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive2 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive2 {
+    width: 100%;
+  }
+}
+
+.rbptxt3{
+  color: black;
+  font-size: 21px;
+  margin-left: -2px;
+
+}
+.rbptxt4{
+  color: gray;
+  font-size: 22px;
+}
+.afterdbg{
+  width: 100%;
+  height: 110vh;
+  background-color:whitesmoke;
+  margin-top: -43px;
+}
+
+.td{
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: -1.5px;
+}
+.tdt{
+    margin-left: 300px;
+    font-size: 1.6vw;
+    margin-right: 230px;
+    text-align: center;
+    line-height: 1.7;
+    color:grey;
+    margin-top: -12px;
+}
+
+/*2nd last*/
+.card2{
+  background-color: white;
+  width: 100%;
+  height: 70vh;
+}
+
+div.gallery3 {
+  border: 1px solid white;
+  height: 50vh;
+  background-color: white;
+}
+
+div.gallery3 img {
+  width: 100%;
+  height: 32vh;
+}
+
+div.desc3 {
+  text-align: left;
+  margin-left: -1px;
+  margin-top: -12px;
+}
+
+.responsive3 {
+  float: left;
+  width: 20%;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: -77px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive3 {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive3 {
+    width: 100%;
+  }
+}
+
+.rbptxt5{
+  color: black;
+  font-size: 26px;
+  letter-spacing: -1.5px;
+  font-weight: 900;
+}
+.rbptxt5:hover{
+  color: lightseagreen;
+}
+
+.fa-star{
+  color: lightseagreen;
+  padding-right: 2px;
+}
+.fa-star-half-stroke{
+  color: lightseagreen;
+  padding-right: 2px;
+  margin-left: -4px;
+}
+.stars{
+  margin-top: -10px;
+
+}
+
+/*footer*/
+.footer{
+  margin-top: -16px;
+  background-color:#0f0f0f;
+  width: 100%;
+  height: 130vh;
+}
+
+.columnf1 {
+  float: left;
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 95px;
+  height: 400px; 
+  margin-top: 80px;
+  font-size: 20px;
+  
+}
+.columnf2 {
+  float: left;
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  height: 400px; 
+  margin-top: 80px;
+  font-size: 20px;
+}
+.ql{
+  color: white;
+  font-size: 22px;
+}
+.qlt{
+  color: gray;
+}
+.qlt:hover{
+  color: white;
+}
+.qlt1{
+font-style: italic;
+color: white;
+
+}
+.qlt2{
+  color: gray;
+  font-size: 18.5px;
+  
+}
+@media screen and (max-width: 600px) {
+  .columnf1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .columnf2 {
+    width: 100%;
+  }
+}
+input{
+  width: 80%;
+  height: 6vh;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  outline: none;
+  caret-color: white;
+  color: white;
+  font-size: 15px;
+}
+input:focus{
+  border-color: white;
+}
+input::placeholder{
+  font-size: 15px;
+  font-style: italic;
+  color: gray;
+}
+.fa-arrow-pointer{
+  color: white;
+  margin-left: -30px;
+  transform: rotate(60deg);
+}
+.fa-arrow-pointer:hover{
+  color: white;
+}
+
+.hrl{
+  border-bottom: 0px solid gray;
+  margin-left: 70px;
+  margin-right: 40px;
+}
+.fcpr{
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+}
+.fcl{
+  text-decoration: none;
+  color: lightgray;
+}
+.fcl:hover{
+  color: white;
+}
+.icons{
+  color: gray;
+  font-size: 24px;
+  text-align: center;
+}
+.fa-facebook-f{
+  margin-right: 10px;
+ margin-left: -7px;
+}
+.fa-facebook-f:hover{
+  color: white;
+}
+.fa-twitter{
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.fa-twitter:hover{
+  color: white;
+}
+.fa-instagram{
+  margin-right: 10px;
+}
+.fa-instagram:hover{
+  color: white;
+}
+.fa-linkedin-in{
+  margin-right: 10px;
+  margin-left: 6.5px;
+}
+.fa-linkedin-in:hover{
+  color:white;
+}
+.fa-youtube{
+  margin-left: 5px;
+}
+.fa-youtube:hover{
+  color:white;
+}
